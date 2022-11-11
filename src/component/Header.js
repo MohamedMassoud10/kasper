@@ -60,7 +60,7 @@ let Header =()=>{
         </div>
         </div>
         <i class="fa-solid fa-angle-right right-arrow"></i>
-        <i class="fa-solid fa-angle-left right-arrow "></i>
+        <i class="fa-solid fa-angle-left left-arrow "></i>
         </div>
 
     )
