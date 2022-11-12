@@ -401,11 +401,14 @@ ul{
   @media(max-width:768px){
     .Services-content{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .Services-content .ser-box{
+        display: flex;
         text-align: center;
         flex-direction: column;
-        margin: auto 30px;
+        
     }
     .design .image{
         display: none;
@@ -505,6 +508,7 @@ ul{
       flex-basis: 25%;
     }
   }
+
   .portfolio .imgs-container .box img {
     max-width: 100%;
     transition: 0.3s;
