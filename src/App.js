@@ -9,14 +9,13 @@ import Contact from './component/Contact';
 function App() {
   return (
     <div className='container'>
-      <Routes>
-      <Route path='/' element={<Header/>}></Route >
-      <Route path='/About' element={<About/>}></Route >
-      <Route path='/Pricing' element={<Pricing/>}></Route >
-      <Route path='/Contact' element={<Contact/>}></Route >
-      <Route path='/Portfolio' element={<Portfolio/>}></Route >
-      <Route path='/Services' element={<Services/>}></Route >
-      </Routes>
+
+      <Header/>
+      <Services/>
+      <Portfolio/>
+      <About/>
+      <Pricing/>
+      <Contact/>
     </div>
   );
 }
