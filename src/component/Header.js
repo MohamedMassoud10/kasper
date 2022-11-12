@@ -1,7 +1,9 @@
+import { setSelectionRange } from "@testing-library/user-event/dist/utils"
 import React from "react"
 import { Link } from "react-router-dom"
 import '../index.css'
 let Header =()=>{
+    let [scroll,setScroll]=React.useState(false)
     let [menu,setMenu]=React.useState(false)
     let [active,setActive]=React.useState()
     let handelMenu=()=>{
@@ -13,6 +15,21 @@ let Header =()=>{
         }
         setActive("active")
         E.target.className=active;
+    }
+    React.useEffect(() => {
+    window.addEventListener("scroll",()=>{
+        if(window.scrollY>100){
+            setScroll(true)
+        }else{
+            setScroll(false)
+        }
+    })
+    }, []);
+    let scrollTop=()=>{
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        })
     }
     return(
         <div className="Home">
@@ -66,8 +83,10 @@ let Header =()=>{
             <div className="bullet bt-c"></div>
             <div className="bullet"></div>
         </div>
+        <div className={scroll?"display-scroll":"scroll-to-top"} onClick={scrollTop}>
+        <i class="fa-solid fa-circle-chevron-up"></i>
         </div>
-
+        </div>
     )
 }
 export default Header
