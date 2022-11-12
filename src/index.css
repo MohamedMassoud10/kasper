@@ -405,6 +405,7 @@ ul{
     .Services-content .ser-box{
         text-align: center;
         flex-direction: column;
+        margin: auto 30px;
     }
     .design .image{
         display: none;
@@ -536,4 +537,9 @@ ul{
   }
   .About .const-div{
     text-align: center;
+}
+@media (max-width:750px){
+    .About .const-div img{
+        width: 100%;
+    }
 }
