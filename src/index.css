@@ -372,6 +372,9 @@ ul{
 .Services-content .ser-box .text-cont p{
     line-height: 30px;
 }
+.Services-content .ser-box .text-cont p{
+    padding: 14px;
+}
 @media screen and (min-width: 992px) and (max-width: 1132px) { 
     .Header{
         width: 100%;
@@ -382,7 +385,6 @@ ul{
       width: 750px;
     }
   }
-  /* Medium */
 @media (min-width: 992px) {
     .Services-content {
       width: 970px;
@@ -392,7 +394,6 @@ ul{
         flex-direction: column;
     }
   }
-  /* Large */
   @media (min-width: 1200px) {
     .Services-content {
       width: 1170px;
@@ -512,6 +513,7 @@ ul{
   .portfolio .imgs-container .box img {
     max-width: 100%;
     transition: 0.3s;
+        margin-top: 100px;
   }
   .portfolio .imgs-container .box .caption {
     position: absolute;
@@ -541,6 +543,12 @@ ul{
   }
   .About .const-div{
     text-align: center;
+}
+.const-div p{
+    padding: 15px;
+}
+.About .const-div img{
+    margin-top: 100px;
 }
 @media (max-width:750px){
     .About .const-div img{
