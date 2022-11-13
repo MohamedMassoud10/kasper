@@ -1,7 +1,7 @@
 let Services=()=>{
     return(
     
-        <div className="Services">
+        <div className="Services" id="serv">
             <div className="const-div">
                 <h1>Services</h1>
                 <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br/> Mauris blandit aliquet elit, eget tincidunt.</p>

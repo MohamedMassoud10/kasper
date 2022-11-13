@@ -1,20 +1,28 @@
 import { setSelectionRange } from "@testing-library/user-event/dist/utils"
-import React from "react"
+import React, { useRef } from "react"
 import { Link } from "react-router-dom"
 import '../index.css'
 let Header =()=>{
     let [scroll,setScroll]=React.useState(false)
     let [menu,setMenu]=React.useState(false)
     let [active,setActive]=React.useState()
+    let Home=React.useRef()
+    let Services=React.useRef()
+    let Portfolio=React.useRef()
+    let About=React.useRef()
+    let Contact=React.useRef()
+    let Pricing=React.useRef()
     let handelMenu=()=>{
         setMenu((p)=>!p)
     }
     let activeClass=(E)=>{
-        if(active==="active"){
-            setActive("")
-        }
-        setActive("active")
-        E.target.className=active;
+        Home.current.className=""
+        Services.current.className=""
+        Portfolio.current.className=""
+        About.current.className=""
+        Contact.current.className=""
+        Pricing.current.className=""
+        E.target.className="active"
     }
     React.useEffect(() => {
     window.addEventListener("scroll",()=>{
@@ -39,19 +47,19 @@ let Header =()=>{
                 <img src="../imges/p1.png"></img>
             </a>
             <ul>
-            <li><Link  to="/" onClick={activeClass}>Home</Link></li>
-            <li><Link to="Services" onClick={activeClass}>Services</Link></li>
-            <li><Link to="Portfolio" onClick={activeClass}>Portfolio</Link></li>
-            <li><Link to="About"onClick={activeClass}>About</Link></li>
-            <li><Link to="Contact"onClick={activeClass}>Contact</Link></li>
-            <li><Link to="Pricing" onClick={activeClass}>Pricing</Link></li>
+            <li><Link  to="/" onClick={activeClass} ref={Home}>Home</Link></li>
+            <li><a href="#serv" onClick={activeClass} ref={Services}>Services</a></li>
+            <li><a href="#prot" onClick={activeClass} ref={Portfolio}>Portfolio</a></li>
+            <li><a href="#about"onClick={activeClass} ref={About}>About</a></li>
+            <li><Link to="Contact"onClick={activeClass} ref={Contact}>Contact</Link></li>
+            <li><Link to="Pricing" onClick={activeClass} ref={Pricing}>Pricing</Link></li>
             <li><i class="fa-sharp fa-solid fa-magnifying-glass search"></i></li>
             </ul>
             <div><i class="fa-solid fa-bars menu" onClick={handelMenu} ></i></div>
             <div className={menu?"toggle-menu":"hidMenu"}>
             <div className="ul">
             <i class="fa-solid fa-caret-up arrow"></i>
-            <li><a class="active" href="#">Home</a></li>
+            <li><a className="active" href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">About</a></li>
