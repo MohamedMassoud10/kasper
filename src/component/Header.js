@@ -5,7 +5,6 @@ import '../index.css'
 let Header =()=>{
     let [scroll,setScroll]=React.useState(false)
     let [menu,setMenu]=React.useState(false)
-    let [active,setActive]=React.useState()
     let Home=React.useRef()
     let Services=React.useRef()
     let Portfolio=React.useRef()
