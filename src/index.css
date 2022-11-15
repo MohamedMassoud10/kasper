@@ -543,6 +543,7 @@ ul{
   }
   .About .const-div{
     text-align: center;
+    padding: 100px 0 0 0;
 }
 .const-div p{
     padding: 15px;
