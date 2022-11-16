@@ -556,3 +556,23 @@ ul{
         width: 100%;
     }
 }
+.stats{
+    display: flex;
+    justify-content: center;
+    background-image: url(./imges/R.jpeg);
+}
+.stats .stats-cont{
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--color-two);
+    margin: 55px;
+    padding: 38px;
+    gap: 32px;
+}
+.stats .stats-cont .box{
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+}
