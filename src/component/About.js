@@ -35,6 +35,30 @@ let About=()=>{
             </div>
           </div>
         </div>
+        <div>
+        </div>
+        <div className="our-skills">
+        <div className="testimonials">
+        <h3>Testimonials</h3>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt.
+          </p>
+          <div className="content">
+              <img src="../imges/skills-01.jpg" alt="" />
+              <p>tesr1</p>
+          </div>
+          <div className="content">
+              <img src="../imges/skills-02.jpg" alt="" />
+              <p>test2</p>
+          </div>
+          <ul class="bullets">
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+          </ul>
+        </div>
+        </div>
         </ScrollTrigger>
 
         </div>
