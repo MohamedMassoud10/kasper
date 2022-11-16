@@ -550,16 +550,30 @@ ul{
 }
 .About .const-div img{
     margin-top: 100px;
+    position: relative;
+    bottom: -6px;
 }
 @media (max-width:750px){
     .About .const-div img{
         width: 100%;
+    }
+    .stats-cont{
+        flex-direction: column;
     }
 }
 .stats{
     display: flex;
     justify-content: center;
     background-image: url(./imges/R.jpeg);
+    background-size: cover;
+}
+.stats::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000070;
+    z-index: 1;
 }
 .stats .stats-cont{
     display: flex;
@@ -570,6 +584,7 @@ ul{
     margin: 55px;
     padding: 38px;
     gap: 32px;
+    z-index: 2;
 }
 .stats .stats-cont .box{
     color: white;
