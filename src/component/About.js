@@ -7,6 +7,7 @@ let About=()=>{
                 <img src="../imges/about.png" alt="" />
             </div>
             <div class="stats">
+              <div className="overlay"></div>
       <div class="stats-cont">
         <div class="box">
           <i class="fas fa-mug-hot"></i>
