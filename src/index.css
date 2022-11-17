@@ -509,7 +509,6 @@ ul{
       flex-basis: 25%;
     }
   }
-
   .portfolio .imgs-container .box img {
     max-width: 100%;
     transition: 0.3s;
@@ -559,6 +558,9 @@ ul{
     .stats-cont{
         flex-direction: column;
     }
+    .our-skills{
+        flex-direction: column;
+    }
 }
 .stats{
     display: flex;
@@ -600,10 +602,67 @@ ul{
     font-size: 18px;
 }
 .our-skills{
-    width: 1130px;
-    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    gap: 100px;
+    margin: 0 65px;
 }
 .our-skills .testimonials .content img{
     height: 100px;
     border-radius: 50%;
+    margin-right: 21px;
+}
+.our-skills .testimonials h3{
+    text-align: center;
+}
+.our-skills .testimonials .content{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.our-skills .testimonials p{
+    text-align: center;
+    margin: 15px 0 0 0;
+    color: #777;
+}
+.our-skills .testimonials .content .text-skills{
+    position: relative;
+    border-bottom: 1px solid #777;
+    margin-bottom: -14px;
+}
+.our-skills .testimonials .content .text-skills p{
+    position: absolute;
+    right: 0;
+}
+.testimonials{
+    position: relative;
+}
+.our-skills .testimonials .bullets-skills{
+    display: flex;
+    position: absolute;
+    bottom: -52px;
+    left: 50%;
+}
+.our-skills .testimonials .bullets-skills li{
+    height: 11px;
+    margin-right: 9px;
+    width: 11px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.our-skills .testimonials .bullets-skills .active{
+    background-color: var(--color-one);
+}
+.our-skills .skills  h3{
+    text-align: center;
+}
+.our-skills .skills p{
+    text-align: center;
+    margin: 15px 0 0 0;
+    color: #777;
+}
+.our-skills .skills .porg{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }

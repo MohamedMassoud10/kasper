@@ -46,19 +46,42 @@ let About=()=>{
           </p>
           <div className="content">
               <img src="../imges/skills-01.jpg" alt="" />
-              <p>tesr1</p>
+              <div className="text-skills">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+              ti ncidunt.
+              <p>John Doe, CEO</p>
+              </div>
           </div>
           <div className="content">
               <img src="../imges/skills-02.jpg" alt="" />
-              <p>test2</p>
+              <div className="text-skills">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+              ti ncidunt.
+              <p>John Doe, CEO</p>
+              </div>
           </div>
-          <ul class="bullets">
+          <ul class="bullets-skills">
             <li></li>
             <li class="active"></li>
             <li></li>
           </ul>
         </div>
+        <div className="skills">
+          <h3>Skills</h3>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt.
+          </p>
+          <div className="porg">
+          <div class="prog-holder">
+          <h4>Adobe</h4>
+          <div class="prog">
+              <span  data-progress={90}></span>
+            </div>
+          </div>
+          </div>
         </div>
+      </div>
         </ScrollTrigger>
 
         </div>
