@@ -157,6 +157,11 @@ ul{
         opacity: 100%;
     }
 }
+@media (min-width:750px)and(max-width:1005px) {
+    .our-skills{
+        flex-direction: column;
+    }
+}
 .Header .hidMenu{
     display: none;
     transition: .5s;
@@ -555,14 +560,16 @@ ul{
     position: relative;
     bottom: -6px;
 }
+@media (max-width:1005px){
+    .our-skills{
+        flex-direction: column;
+    }
+}
 @media (max-width:750px){
     .About .const-div img{
         width: 100%;
     }
     .stats-cont{
-        flex-direction: column;
-    }
-    .our-skills{
         flex-direction: column;
     }
 }
@@ -634,10 +641,12 @@ ul{
     position: relative;
     border-bottom: 1px solid #777;
     margin-bottom: -49px;
+    padding: 20px;
 }
 .our-skills .testimonials .content .text-skills p{
     position: absolute;
     right: 0;
+    bottom: 0;
 }
 .testimonials{
     position: relative;
