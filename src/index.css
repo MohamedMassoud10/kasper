@@ -1160,4 +1160,26 @@ padding: 0 100px 100px 100px ;
     font-weight: bold;
     color: var(--color-one);
   }
-  
+  .pricing .pricing-content{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .pricing .pricing-content {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .pricing .pricing-content {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .pricing .pricing-content {
+      width: 1170px;
+    }
+  }
