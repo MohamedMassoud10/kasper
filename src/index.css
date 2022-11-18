@@ -384,6 +384,7 @@ ul{
     .Services-content {
       width: 750px;
     }
+
   }
 @media (min-width: 992px) {
     .Services-content {
@@ -397,6 +398,9 @@ ul{
   @media (min-width: 1200px) {
     .Services-content {
       width: 1170px;
+    }
+    .testimonials{
+        flex-basis: 500px;
     }
   }
   @media(max-width:768px){
@@ -576,7 +580,7 @@ ul{
     padding: 10px;
     background-color: var(--color-two);
     margin: 55px;
-    padding: 55px;
+    padding: 21px;
     gap: 32px;
     z-index: 2;
 }
@@ -606,6 +610,7 @@ ul{
     display: flex;
     gap: 100px;
     margin: 0 65px;
+    flex-basis: 500px;
 }
 .our-skills .testimonials .content img{
     height: 100px;
@@ -628,7 +633,7 @@ ul{
 .our-skills .testimonials .content .text-skills{
     position: relative;
     border-bottom: 1px solid #777;
-    margin-bottom: -14px;
+    margin-bottom: -49px;
 }
 .our-skills .testimonials .content .text-skills p{
     position: absolute;
@@ -636,6 +641,7 @@ ul{
 }
 .testimonials{
     position: relative;
+    flex-basis: 500px;
 }
 .our-skills .testimonials .bullets-skills{
     display: flex;
@@ -661,8 +667,108 @@ ul{
     margin: 15px 0 0 0;
     color: #777;
 }
-.our-skills .skills .porg{
+.our-skills .skills .prog-box{
     display: flex;
     margin-top: 60px;
     margin-bottom: 40px;
+}
+.our-skills .skills .prog-box .prog-holder{
+    width: 100%;
+}
+.prog{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.prog-box .prog .bar{
+    width: 90%;
+    height: 25px;
+    margin-right: 12px;
+    position: relative;
+}
+.prog-box .prog .bar::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: var(--color-one);
+    left: 0;
+    width: 50%;
+    animation: progress 1s ease-in-out forwards;
+}
+@keyframes progress{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.prog-box .prog .bar-1{
+    width: 85%;
+    height: 25px;
+    margin-right: 12px;
+    position: relative;
+}
+.prog-box .prog .bar-1::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: var(--color-one);
+    left: 0;
+    width: 50%;
+    animation: progressOne 1s ease-in-out forwards;
+}
+@keyframes progressOne{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.prog-box .prog .bar-2{
+    width: 80%;
+    height: 25px;
+    margin-right: 12px;
+    position: relative;
+}
+.prog-box .prog .bar-2::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: var(--color-one);
+    left: 0;
+    width: 50%;
+    animation: progressTwo 1s ease-in-out forwards;
+}
+@keyframes progressTwo{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.prog-box .prog .bar-3{
+    width: 85%;
+    height: 25px;
+    margin-right: 12px;
+    position: relative;
+}
+.prog-box .prog .bar-3::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: var(--color-one);
+    left: 0;
+    width: 50%;
+    animation: progressThree 1s ease-in-out forwards;
+}
+@keyframes progressThree{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
 }

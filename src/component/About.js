@@ -72,14 +72,43 @@ let About=()=>{
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
             tincidunt.
           </p>
-          <div className="porg">
+          <div className="prog-box">
           <div class="prog-holder">
           <h4>Adobe</h4>
           <div class="prog">
-              <span  data-progress={90}></span>
+          <div className="bar"></div>
+            <span><CountUp start={0} end={90} duration={1} delay={0} className={"count"}/>%</span>
             </div>
           </div>
           </div>
+          <div className="prog-box">
+          <div class="prog-holder">
+          <h4>HTML & CSS</h4>
+          <div class="prog">
+          <div className="bar-1"></div>
+            <span><CountUp start={0} end={85} duration={1} delay={0} className={"count"}/>%</span>
+            </div>
+          </div>
+          </div>
+          <div className="prog-box">
+          <div class="prog-holder">
+          <h4>JAVASCRIPT</h4>
+          <div class="prog">
+          <div className="bar-2"></div>
+            <span><CountUp start={0} end={80} duration={1} delay={0} className={"count"}/>%</span>
+            </div>
+          </div>
+          </div>
+          <div className="prog-box">
+          <div class="prog-holder">
+          <h4>PHP</h4>
+          <div class="prog">
+          <div className="bar-3"></div>
+            <span><CountUp start={0} end={90} duration={1} delay={0} className={"count"}/>%</span>
+            </div>
+          </div>
+          </div>
+          
         </div>
       </div>
         </ScrollTrigger>
