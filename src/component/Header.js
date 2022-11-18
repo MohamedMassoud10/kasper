@@ -50,8 +50,8 @@ let Header =()=>{
             <li><a href="#serv" onClick={activeClass} ref={Services}>Services</a></li>
             <li><a href="#prot" onClick={activeClass} ref={Portfolio}>Portfolio</a></li>
             <li><a href="#about"onClick={activeClass} ref={About}>About</a></li>
-            <li><Link to="Contact"onClick={activeClass} ref={Contact}>Contact</Link></li>
-            <li><Link to="Pricing" onClick={activeClass} ref={Pricing}>Pricing</Link></li>
+            <li><a href="#contact"onClick={activeClass} ref={Contact}>Contact</a></li>
+            <li><a href="#pricing" onClick={activeClass} ref={Pricing}>Pricing</a></li>
             <li><i class="fa-sharp fa-solid fa-magnifying-glass search"></i></li>
             </ul>
             <div><i class="fa-solid fa-bars menu" onClick={handelMenu} ></i></div>

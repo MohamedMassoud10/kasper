@@ -112,7 +112,12 @@ let About=()=>{
         </div>
       </div>
         </ScrollTrigger>
-
+        <div class="quote">
+      <div class="content">
+        <q>accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</q>
+        <span>John Doe</span>
+      </div>
+    </div>
         </div>
     )
 }
