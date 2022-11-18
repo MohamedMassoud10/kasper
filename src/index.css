@@ -424,6 +424,9 @@ ul{
     .design .image{
         display: none;
     }
+    .Services-content .ser-box i {
+        margin-right: 0;
+    }
   }
   .design{
     padding-top: var(--const-top-bottom-padding);
